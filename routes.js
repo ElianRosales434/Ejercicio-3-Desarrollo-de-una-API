@@ -4,7 +4,7 @@ import { deletebyId,getAll, create, update} from "./controllers/bookController.j
 const router = express.Router();
 
 router.post("/createBook",create);
-router.put("/updateBook",update);
+router.put("/updateBook/:id",update);
 router.get("/readBooks",getAll);
 router.delete("/deleteBook/:id",deletebyId)
 
